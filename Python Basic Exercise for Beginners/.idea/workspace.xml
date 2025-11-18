@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b43e231-308d-4daf-b4b5-ef8025b23b9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Check Palindrome Number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Find the number of occurrences of a substring in a string.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Print the following pattern.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b43e231-308d-4daf-b4b5-ef8025b23b9b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,30 +29,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.15112025 Lisr Print.executor": "Run",
-    "Python.15112025 School.executor": "Run",
-    "Python.Check Palindrome Number.executor": "Run",
-    "Python.Check if the first and last numbers of a list are the same.executor": "Run",
-    "Python.Display numbers divisible by 5.executor": "Run",
-    "Python.Find the number of occurrences of a substring in a string.executor": "Run",
-    "Python.Name operator.executor": "Run",
-    "Python.Print the following pattern.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/HP/Desktop/333/HomWork/w3schools",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.15112025 Lisr Print.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15112025 School.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Check Palindrome Number.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Check if the first and last numbers of a list are the same.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Display numbers divisible by 5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Find the number of occurrences of a substring in a string.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Name operator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Print the following pattern.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/333/HomWork/w3schools&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Desktop\333\HomWork\w3schools" />
@@ -81,6 +76,7 @@
       <workItem from="1763056188881" duration="305000" />
       <workItem from="1763194374840" duration="6420000" />
       <workItem from="1763409561665" duration="1626000" />
+      <workItem from="1763481691344" duration="116000" />
     </task>
     <servers />
   </component>
