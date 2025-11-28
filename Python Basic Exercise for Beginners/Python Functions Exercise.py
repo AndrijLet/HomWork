@@ -115,3 +115,81 @@
 #     return result
 #
 # print("final returned valute:", outer(10, 20))
+
+
+#Exercise 6: Create a recursive function
+# def recursive_sum(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n + recursive_sum(n - 1)
+#
+# result = recursive_sum(10)
+# print(recursive_sum(10))
+
+#numb2
+# def addition(num):
+#     print("Calling addition(",num,")")#щоб бачити результат функціїї
+#     if num:
+#         return num + addition(num - 1)
+#     else:
+#         return 0
+#
+# print(addition(10))
+
+
+#Exercise 7: Assign a different name to function and call it through the new name
+#
+# def display_student(name, age):
+#     print(name, age)
+#
+# show_student = display_student
+#
+# show_student("Emma", 26)
+
+
+#Exercise 8: Generate a Python list of all the even numbers between 4 to 30
+
+# even_nubers = [num for num in range(1, 31) if num % 2 == 0]
+# print(even_nubers)
+
+
+#Exercise 9: Find the largest item from list
+
+# x = [4, 6, 8, 24, 12, 2]
+# print(max (x))
+
+#інший спосіб без (max)
+
+# x = [4, 6, 8, 24, 12, 2]
+# largest = x[0]
+#
+# for num in x:
+#     if num > largest:
+#         largest = num
+#
+# print(largest)
+
+
+#Exercise 10: Call Function using both positional and keyword arguments
+#
+# def descride_pet(animal_type, pet_name):
+#     print(f"\nI have a {animal_type}, named {pet_name}.")
+#
+# descride_pet("hamster", "Harry")
+# descride_pet("dog", "Lucia")
+#
+# descride_pet("cat", "Whid")
+# descride_pet("Buddy", "goldfish")
+
+#Exercise 11: Create a function with keyword arguments
+#
+# def print_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+#     else:
+#         print("\nNone information provided")
+#
+# print_info(name="John", age=22, contry="USA")
+# print("\n---\n")
+# print_info(name="Andre", age=29, contry="123")
