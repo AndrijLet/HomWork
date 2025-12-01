@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d158a98e-029a-4dc6-91a2-4c7a8dfac94f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/29 nov 2025.py" beforeDir="false" afterPath="$PROJECT_DIR$/29 nov 2025.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python Functions Exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Functions Exercise.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +69,7 @@
       <workItem from="1764361919536" duration="6707000" />
       <workItem from="1764403857140" duration="7232000" />
       <workItem from="1764529051253" duration="9384000" />
+      <workItem from="1764615994853" duration="5636000" />
     </task>
     <servers />
   </component>
@@ -77,7 +77,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python_Basic_Exercise_for_Beginners$Python_Functions_Exercise.coverage" NAME="Python Functions Exercise Coverage Results" MODIFIED="1764538504472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Basic_Exercise_for_Beginners$Python_Functions_Exercise.coverage" NAME="Python Functions Exercise Coverage Results" MODIFIED="1764621641725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_Basic_Exercise_for_Beginners$29_nov_2025.coverage" NAME="29 nov 2025 Coverage Results" MODIFIED="1764531211287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

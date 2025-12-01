@@ -264,32 +264,140 @@
 # #інший варіант вирішення
 # print("Available fruits for customer: ", sorted([fruit for fruit in customer if fruit in store]))
 
-'''Exercise 18: Create Higher-Order Function'''
+# '''Exercise 18: Create Higher-Order Function'''
+#
+# def apply_operation(func, x, y):
+#     return func(x, y)
+# """
+# Applies a given function to two numbers.
+#
+#   Args:
+#     func: The function to apply (should take two arguments).
+#     x: The first number.
+#     y: The second number.
+#
+#   Returns:
+#     The result of calling func(x, y).
+# """
+#
+#
+# def add(a, b):
+#     return a + b
+# resuld_add = apply_operation(add, 5, 3)
+# print(f"Result of addition: {resuld_add}")
+#
+# subtract = lambda a, b: a - b
+# result_subtract = apply_operation(subtract, 10, 4)
+# print(f"Result of addition: {result_subtract}")
+#
+# multipiy = lambda a, b: a * b
+# result_multiply = apply_operation(multipiy, 2, 6)
+# print(f"Result of multiplication: {result_multiply}")
+#
+# def calculate(operation, a, b):
+#     return operation(a, b)
+#
+# def add(x, y): return x + y
+# def subtract(x, y): return x - y
+# def multiply(x, y): return x * y
+# def divide(x, y): return x / y if y != 0 else "Error: division by zero!"
+#
+# print("Choose an operation:")
+# print("1. Add")
+# print("2. Subtract")
+# print("3. Multiply")
+# print("4. Divide")
+#
+# choice = input("Enter your choice (1-4): ")
+#
+# a = float(input("Enter first number: "))
+# b = float(input("Enter second number: "))
+#
+# operations = {
+#     "1": add,
+#     "2": subtract,
+#     "3": multiply,
+#     "4": divide,
+# }
+# if choice in operations:
+#     result = calculate(operations[choice], a, b)
+#     print("Result:", result)
+# else:
+#     print("Invalid choice!")
 
-def apply_operation(func, x, y):
-    return func(x, y)
-"""
-Applies a given function to two numbers.
 
-  Args:
-    func: The function to apply (should take two arguments).
-    x: The first number.
-    y: The second number.
+# def filter_list(data, condition):
+#     return [item for item in data if condition(item)]
+#
+# list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# list2 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+#
+# is_even = lambda x: x % 2 == 0
+# is_odd = lambda x: x % 2 != 0
+#
+# result = filter_list(list1, is_even) + filter_list(list2, is_odd)
+# print("Third list: ", result)
 
-  Returns:
-    The result of calling func(x, y).
-"""
+"""GPT"""
+# def filter_list(data, is_valid):
+#      return [item for item in data if is_valid(item)]
+#
+# numbers = [3, 15, 8, 22, 7, 19]
+#
+# is_even = lambda x: x >10
+#
+# result = filter_list(numbers, is_even)
+# print(result)
 
+"""GPT2"""
+# def filter_list(data, is_valid):
+#      return [item for item in data if is_valid(item)]
+#
+# temps = [12, -5, 0, -1, 18, -12]
+#
+# is_even = lambda x: x < 0
+#
+# result = filter_list(temps, is_even)
+# print(result)
 
-def add(a, b):
-    return a + b
-resuld_add = apply_operation(add, 5, 3)
-print(f"Result of addition: {resuld_add}")
+# def filter_list(data, condition):
+#     return [item for item in data if condition(item)]
+#
+# a = [3, 4, 9, 10, 12, 7]
+# b = [5, 8, 15, 20, 22]
+#
+# is_even = lambda x: x % 3 == 0
+# is_odd = lambda x: x % 5 == 0
+#
+# result = filter_list(a, is_even) + filter_list(b, is_odd)
+# print("Third list: ", result)
 
-subtract = lambda a, b: a - b
-result_subtract = apply_operation(subtract, 10, 4)
-print(f"Result of addition: {result_subtract}")
+# def apply_to_all(data, operation):
+#     return [operation(item) for item in data]
+#
+# #варіанти операцій
+# square = lambda x: x ** 2              #квадрат
+# duble = lambda x: x * 2                #подвоєння
+# to_string = lambda x: f"Number {x}"    #перетворення в текст
+# increment = lambda x: x + 1            #+1
+#
+# #list
+# numbers = [1, 2, 3, 4, 5]
+#
+# #використання use
+# print(apply_to_all(numbers, square))
+# print(apply_to_all(numbers, duble))
+# print(apply_to_all(numbers, to_string))
+# print(apply_to_all(numbers, increment))
 
-multipiy = lambda a, b: a * b
-result_multiply = apply_operation(multipiy, 2, 6)
-print(f"Result of multiplication: {result_multiply}")
+def transform_list(data, operation):
+    return [operation(item) for item in data]
+
+make_negative = lambda x: -x
+
+numbers = [3, 8, 5, 10, 0]
+
+negative_numbers = transform_list(numbers, make_negative)
+
+print(f"Numbers: {negative_numbers}")
+
