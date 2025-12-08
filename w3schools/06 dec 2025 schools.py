@@ -80,12 +80,56 @@
 # print(f'{dict3}')
 
 '''Exercise 6: Count Character Frequencies'''
+#
+# from collections import Counter
+# string1 = 'Jessa'
+#
+# # Використовуємо Counter для автоматичного підрахунку частот символів
+# char_frequency = Counter(string1)
+#
+# print(f"Frequency of '{string1}' : {dict(char_frequency)}")
 
-from collections import Counter
-string1 = 'Jessa'
+'''Exercise 7: Access Nested Dictionary'''
 
-# Використовуємо Counter для автоматичного підрахунку частот символів
-char_frequency = Counter(string1)
+data = {'person': {'name': 'Alice', 'age': 30}}
+# print(f'Nested dictionary: {data}')
+#
+# alice_data = data['person'] ['age']
+# print(f'Alice age is: {alice_data}')
 
-print(f"Frequency of '{string1}' : {dict(char_frequency)}")
+# Забезпечує, що data.get('person') поверне словник (або порожній словник, якщо ключа немає)
+# alice_age_safe = data.get('person', {}).get('age')
+#
+# print(f'Alice age (safe): {alice_age_safe}')
 
+# Дано словник, який містить інформацію про співробітників (ID, ім'я, відділ, зарплата).
+# Створіть новий вкладений словник, який групує співробітників за відділами.
+
+from collections import defaultdict
+employees = {
+    1001: {"name": "Alice", "department": "Engineering", "salary": 75000},
+    1002: {"name": "Bob", "department": "Sales", "salary": 50000},
+    1003: {"name": "Charlie", "department": "Engineering", "salary": 80000},
+    1004: {"name": "Dave", "department": "Marketing", "salary": 60000},
+    1005: {"name": "Eve", "department": "Sales", "salary": 55000}
+}
+# Використовуємо defaultdict, де значенням за замовчуванням є порожній словник (dict)
+dept_employees = defaultdict(dict)
+
+for emp_id, data in employees.items():
+# 1. Визначаємо ключ для групування
+    departament = data['department']
+# 2. Створюємо новий словник із деталями співробітника
+# Використовуємо словникове включення для копіювання атрибутів,
+# виключаючи ключ 'department'
+
+    empoloyee_detalis = {k: v for k, v in data.items() if k != 'department'}
+
+# 3. Додаємо дані співробітника (під його ID) до відповідного відділу
+
+    dept_employees[departament] [emp_id] = empoloyee_detalis
+
+# Перетворюємо defaultdict на звичайний dict для фінального виводу
+
+dept_employees = dict(dept_employees)
+print(dept_employees)
