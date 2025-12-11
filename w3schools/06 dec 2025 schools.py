@@ -104,32 +104,50 @@ data = {'person': {'name': 'Alice', 'age': 30}}
 
 # Дано словник, який містить інформацію про співробітників (ID, ім'я, відділ, зарплата).
 # Створіть новий вкладений словник, який групує співробітників за відділами.
+#
+# from collections import defaultdict
+# employees = {
+#     1001: {"name": "Alice", "department": "Engineering", "salary": 75000},
+#     1002: {"name": "Bob", "department": "Sales", "salary": 50000},
+#     1003: {"name": "Charlie", "department": "Engineering", "salary": 80000},
+#     1004: {"name": "Dave", "department": "Marketing", "salary": 60000},
+#     1005: {"name": "Eve", "department": "Sales", "salary": 55000}
+# }
+# # Використовуємо defaultdict, де значенням за замовчуванням є порожній словник (dict)
+# dept_employees = defaultdict(dict)
+#
+# for emp_id, data in employees.items():
+# # 1. Визначаємо ключ для групування
+#     departament = data['department']
+# # 2. Створюємо новий словник із деталями співробітника
+# # Використовуємо словникове включення для копіювання атрибутів,
+# # виключаючи ключ 'department'
+#
+#     empoloyee_detalis = {k: v for k, v in data.items() if k != 'department'}
+#
+# # 3. Додаємо дані співробітника (під його ID) до відповідного відділу
+#
+#     dept_employees[departament] [emp_id] = empoloyee_detalis
+#
+# # Перетворюємо defaultdict на звичайний dict для фінального виводу
+#
+# dept_employees = dict(dept_employees)
+# print(dept_employees)
 
-from collections import defaultdict
-employees = {
-    1001: {"name": "Alice", "department": "Engineering", "salary": 75000},
-    1002: {"name": "Bob", "department": "Sales", "salary": 50000},
-    1003: {"name": "Charlie", "department": "Engineering", "salary": 80000},
-    1004: {"name": "Dave", "department": "Marketing", "salary": 60000},
-    1005: {"name": "Eve", "department": "Sales", "salary": 55000}
-}
-# Використовуємо defaultdict, де значенням за замовчуванням є порожній словник (dict)
-dept_employees = defaultdict(dict)
+# try:
+#     age = 15
+#     if age > 18:
+#         print('You are old enough.')
+#     else:
+#         raise Exception('You are old enough.')
+# except Exception as error:
+#     print(error)
 
-for emp_id, data in employees.items():
-# 1. Визначаємо ключ для групування
-    departament = data['department']
-# 2. Створюємо новий словник із деталями співробітника
-# Використовуємо словникове включення для копіювання атрибутів,
-# виключаючи ключ 'department'
-
-    empoloyee_detalis = {k: v for k, v in data.items() if k != 'department'}
-
-# 3. Додаємо дані співробітника (під його ID) до відповідного відділу
-
-    dept_employees[departament] [emp_id] = empoloyee_detalis
-
-# Перетворюємо defaultdict на звичайний dict для фінального виводу
-
-dept_employees = dict(dept_employees)
-print(dept_employees)
+try:
+    age = 15
+    if age > 18:
+        print('You are old enough.')
+    else:
+        raise Exception('You are old enough.')
+except Exception as error:
+    print(error)
