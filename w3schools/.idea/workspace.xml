@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1bf4f21-24d6-4e9f-8a31-c13b0244c84d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/16 dece 2025.py" afterDir="false" />
+    <list default="true" id="d35ecb45-0c8c-46ce-a6c6-98c19e25fd61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16 dece 2025.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Python Object-Oriented Programming/20 decem 2025 schools.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="36LQGbpkwFj1ZVca6udxEV2IJd4" />
+  <component name="ProjectId" id="376LmvYxUy2EsxNfzQWt8wblbTd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,22 +38,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.03 dec 2025 w3shools.executor": "Run",
-    "Python.04 dec 2025 Using reversed() function.executor": "Run",
-    "Python.06 dec 2025 schools.executor": "Run",
-    "Python.16 dece 2025.executor": "Run",
-    "Python.Python Functions Exercise.executor": "Run",
-    "Python.Python Try Except 11_12_2025.executor": "Run",
+    "Python.20 decem 2025 schools.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -62,21 +55,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e1bf4f21-24d6-4e9f-8a31-c13b0244c84d" name="Changes" comment="" />
-      <created>1764783276429</created>
+      <changelist id="d35ecb45-0c8c-46ce-a6c6-98c19e25fd61" name="Changes" comment="" />
+      <created>1766218736547</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1764783276429</updated>
-      <workItem from="1764783277507" duration="1535000" />
-      <workItem from="1764865752611" duration="7000" />
-      <workItem from="1764865781143" duration="72000" />
+      <updated>1766218736547</updated>
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/w3schools$03_dec_2025_w3shools.coverage" NAME="03 dec 2025 w3shools Coverage Results" MODIFIED="1764784776393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
