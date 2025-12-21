@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d35ecb45-0c8c-46ce-a6c6-98c19e25fd61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Python Basic Exercise for Beginners/Python Object-Oriented Programming/Python Object-Oriented Programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python Basic Exercise for Beginners/Python Object-Oriented Programming/Python Object-Oriented Programming.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16 dece 2025.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.20 decem 2025 schools.executor": "Run",
+    "Python.Python Object-Oriented Programming.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",

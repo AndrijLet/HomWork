@@ -68,21 +68,139 @@
 
 '''OOP Exercise 5: Define a property that must have the same value for every class instance (object)'''
 
-class Vehicle:
-    color = "White"
-    def __init__(self, name, max_speed, mileage):
-        self.name = name
-        self.max_speed = max_speed
-        self.mileage = mileage
+# class Vehicle:
+#     color = "White"
+#     def __init__(self, name, max_speed, mileage):
+#         self.name = name
+#         self.max_speed = max_speed
+#         self.mileage = mileage
+#
+# class Bus(Vehicle):
+#     pass
+#
+# class Car(Vehicle):
+#     pass
+#
+# School_bus = Bus("School Volvo", 180, 12)
+# print(School_bus.color, School_bus.name, "Speed:", School_bus.max_speed, "Mileage:", School_bus.mileage)
+#
+# car = Car("Audi Q5", 240, 18)
+# print(car.color, car.name, "Speed:", car.max_speed, "Mileage:", car.mileage)
 
-class Bus(Vehicle):
-    pass
 
-class Car(Vehicle):
-    pass
+'''OOP Exercise 6: Class Inheritance'''
 
-School_bus = Bus("School Volvo", 180, 12)
-print(School_bus.color, School_bus.name, "Speed:", School_bus.max_speed, "Mileage:", School_bus.mileage)
+# class Vehicle:
+#     def __init__(self, name, mileage, capacity):
+#         self.name = name
+#         self.mileage = mileage
+#         self.capacity = capacity
+#
+#     def fare(self):
+#         return self.capacity * 100
+#
+# class Bus(Vehicle):
+#     def fare(self):
+#         base_fare = super().fare()
+#         """Розрахунок вартості для автобуса з урахуванням 10% націнки."""
+#         # Отримуємо базову вартість від батьківського класу через super()
+#         total_fare = base_fare + (base_fare * 10 / 100)
+# #         додаємо 10% до суми
+#         return total_fare
+#
+# School_bus = Bus("School Volvo", 12, 50)
+# print("Total Bus fare is:", School_bus.fare())
 
-car = Car("Audi Q5", 240, 18)
-print(car.color, car.name, "Speed:", car.max_speed, "Mileage:", car.mileage)
+'''OOP Exercise 7: Check type of an object'''
+
+# class Vehicle:
+#     def __init__(self, name, mileage, capacity):
+#         self.name = name
+#         self.mileage = mileage
+#         self.capacity = capacity
+#
+# class Bus(Vehicle):
+#     pass
+#
+# School_bus = Bus("School Volvo", 12, 50)
+#
+# print(type(School_bus))
+
+# можна застосувати функцію isinstance(), яка перевіряє, чи є об'єкт
+# екземпляром конкретного класу або будь-якого класу в його ієрархії успадкування
+# class Vehicle:
+#     def __init__(self, name, mileage, capacity):
+#         self.name = name
+#         self.mileage = mileage
+#         self.capacity = capacity
+#
+# class Bus(Vehicle):
+#     pass
+#
+# School_bus = Bus("School Volvo", 12, 50)
+
+# print(f'Class: {type(School_bus)}')
+# if isinstance(School_bus, Bus):
+#     print("Bus Class Inheritance")
+
+'''OOP Exercise 8: Determine if School_bus is also an instance of the Vehicle class'''
+
+# class Vehicle:
+#     def __init__(self, name, mileage, capacity):
+#         self.name = name
+#         self.mileage = mileage
+#         self.capacity = capacity
+#
+# class Bus(Vehicle):
+#     pass
+#
+# School_bus = Bus("School Volvo", 12, 50)
+#
+# print(isinstance(School_bus, Vehicle))
+
+'''OOP Exercise 9: Check object is a subclass of a particular class'''
+
+# class Animal:
+#     pass
+#
+# class Dog(Animal):
+#     pass
+#
+# class Puppy(Dog):
+#     pass
+#
+# class Cat:
+#     pass
+#
+# print(issubclass(Dog, Animal))
+# print(issubclass(Animal, Dog))
+# print(issubclass(Cat, Animal))
+# print(issubclass(Puppy, Animal))
+
+'''OOP Exercise 10: Calculate the area of different shapes using OOP'''
+
+import math
+
+class Shape:
+    def area(self):
+        raise NotImplementedError('Area method must be implemented by subclasses')
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius ** 2
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side ** 2
+
+# Example of polymorphism
+shapes = [Circle(5), Square(7), Circle(3)]
+
+for shape in shapes:
+    print(shape.area())  # Output: 78.53975, 49, 28.27431
