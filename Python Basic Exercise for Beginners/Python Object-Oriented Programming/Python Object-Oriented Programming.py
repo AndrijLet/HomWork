@@ -179,28 +179,59 @@
 
 '''OOP Exercise 10: Calculate the area of different shapes using OOP'''
 
-import math
+# import math
+#
+# class Shape:
+#     def area(self):
+#         raise NotImplementedError('Area method must be implemented by subclasses')
+#
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+#
+#     def area(self):
+#         return math.pi * self.radius ** 2
+#
+# class Square(Shape):
+#     def __init__(self, side):
+#         self.side = side
+#
+#     def area(self):
+#         return self.side ** 2
+#
+# # Example of polymorphism
+# shapes = [Circle(5), Square(7), Circle(3)]
+#
+# for shape in shapes:
+#     print(shape.area())  # Output: 78.53975, 49, 28.27431
 
-class Shape:
-    def area(self):
-        raise NotImplementedError('Area method must be implemented by subclasses')
 
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
+'''OOP Exercise 10'''
 
-    def area(self):
-        return math.pi * self.radius ** 2
+class Employee:
+    def calculate_salary(self):
+        raise NotImplementedError("This method must be implemented in subclasses")
 
-class Square(Shape):
-    def __init__(self, side):
-        self.side = side
+class HourlyEmployee(Employee):
+    def __init__(self, hours, rate):
+        self.hours = hours
+        self.rate = rate
 
-    def area(self):
-        return self.side ** 2
+    def calculate_salary(self):
+        return self.hours * self.rate
 
-# Example of polymorphism
-shapes = [Circle(5), Square(7), Circle(3)]
+class SalariedEmployee(Employee):
+    def __init__(self, monthly_salary):
+        self.monthly_salary = monthly_salary
 
-for shape in shapes:
-    print(shape.area())  # Output: 78.53975, 49, 28.27431
+    def calculate_salary(self):
+        return self.monthly_salary
+
+employees = [
+    HourlyEmployee(hours=160, rate=10),
+    SalariedEmployee(3000),
+    HourlyEmployee(hours=120, rate=15),
+]
+
+for emp in employees:
+    print(emp.calculate_salary())
