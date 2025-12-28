@@ -207,31 +207,64 @@
 
 
 '''OOP Exercise 10'''
+#
+# class Employee:
+#     def calculate_salary(self):
+#         raise NotImplementedError("This method must be implemented in subclasses")
+#
+# class HourlyEmployee(Employee):
+#     def __init__(self, hours, rate):
+#         self.hours = hours
+#         self.rate = rate
+#
+#     def calculate_salary(self):
+#         return self.hours * self.rate
+#
+# class SalariedEmployee(Employee):
+#     def __init__(self, monthly_salary):
+#         self.monthly_salary = monthly_salary
+#
+#     def calculate_salary(self):
+#         return self.monthly_salary
+#
+# employees = [
+#     HourlyEmployee(hours=160, rate=10),
+#     SalariedEmployee(3000),
+#     HourlyEmployee(hours=120, rate=15),
+# ]
+#
+# for emp in employees:
+#     print(emp.calculate_salary())
 
-class Employee:
-    def calculate_salary(self):
-        raise NotImplementedError("This method must be implemented in subclasses")
 
-class HourlyEmployee(Employee):
-    def __init__(self, hours, rate):
-        self.hours = hours
-        self.rate = rate
-
-    def calculate_salary(self):
-        return self.hours * self.rate
-
-class SalariedEmployee(Employee):
-    def __init__(self, monthly_salary):
-        self.monthly_salary = monthly_salary
-
-    def calculate_salary(self):
-        return self.monthly_salary
-
-employees = [
-    HourlyEmployee(hours=160, rate=10),
-    SalariedEmployee(3000),
-    HourlyEmployee(hours=120, rate=15),
-]
-
-for emp in employees:
-    print(emp.calculate_salary())
+'''OOP Exercise 11'''
+# class Employee:
+#     def calculate_salary(self):
+#         raise NotImplementedError("This method is not implemented in subclass")
+#
+# class CommissionEmployee(Employee):
+#     def __init__(self, base_salary, sales, percent):
+#         self.base_salary = base_salary
+#         self.sales = sales
+#         self.percent = percent
+#
+#     def calculate_salary(self):
+#         return self.base_salary + (self.sales * self.percent / 100)
+#
+# class HourlyEmployee(Employee):
+#
+#     def __init__(self, hours, rate):
+#         self.hours = hours
+#         self.rate = rate
+#
+#
+#     def calculate_salary(self):
+#         return self.hours * self.rate
+#
+# employees = [
+#     CommissionEmployee(2000, 5000, 10),
+#     HourlyEmployee(160, 15)
+# ]
+#
+# for employee in employees:
+#     print(employee.calculate_salary())
