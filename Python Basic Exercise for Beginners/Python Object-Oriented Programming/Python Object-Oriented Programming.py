@@ -268,3 +268,34 @@
 #
 # for employee in employees:
 #     print(employee.calculate_salary())
+
+'''OOP Exercise 12'''
+# class Employee:
+#     def calculate_salary(self):
+#         raise NotImplementedError("Please implement calculate_salary")
+#
+# class HourlyEmployee(Employee):
+#     def __init__(self, hours, rate):
+#         self.hours = hours
+#         self.rate = rate
+#
+#     def calculate_salary(self):
+#         return self.hours * self.rate
+#
+# class SalaryEmployee(Employee):
+#     def __init__(self, monthly_salary):
+#         self.monthly_salary = monthly_salary
+#
+#     def calculate_salary(self):
+#         return self.monthly_salary
+#
+# employees = [
+#
+#     HourlyEmployee(160, 15),
+#     SalaryEmployee(3000)
+# ]
+#
+# for employee in employees:
+#     print("Salary:", employee.calculate_salary())
+
+# print(isinstance(HourlyEmployee(10, 5), Employee))
