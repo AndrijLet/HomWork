@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Мій SEO сайт{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<nav>
+    <a href="{{ url_for('index') }}">Головна</a>
+    <a href="{{ url_for('about') }}">Про мене</a>
+    <a href="{{ url_for('seo') }}">SEO</a>
+</nav>
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

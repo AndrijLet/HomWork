@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Привітання по центру з градієнтом */
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    background: linear-gradient(to right, #4a6fa5, #7f9fc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome .intro {
+    font-size: 1.3em;
+    color: #556677;
+}
+
+/* Блок посилань */
+.links {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.links h2 {
+    font-size: 1.6em;
+    color: #334d66;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    font-weight: bold;
+    color: #4a6fa5;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
