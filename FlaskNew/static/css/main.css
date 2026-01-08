@@ -77,3 +77,40 @@ nav a:hover {
 .links a:hover {
     text-decoration: underline;
 }
+.footer-links {
+    position: relative;
+    bottom: 0;
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e9ecf3;
+    border-top: 1px solid #ccc;
+}
+
+.footer-links h3 {
+    font-size: 1.4em;
+    color: #334d66;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.footer-links a {
+    font-weight: bold;
+    color: #4a6fa5;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

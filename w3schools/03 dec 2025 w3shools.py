@@ -24,5 +24,13 @@
 #         print(num, end=" ")
 #     print()
 
-# for num in range(5, -1, -1):
-#     # print(num)
+for num in range(5, -1, -1):
+    # print(num)
+
+for num in range(11):
+    for i in range(num):
+        print(num, end=" ")
+    print()
+
+for num in range(5, -1, -1):
+    # print(num)

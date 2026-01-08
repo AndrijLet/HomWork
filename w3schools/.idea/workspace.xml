@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d35ecb45-0c8c-46ce-a6c6-98c19e25fd61" name="Changes" comment="" />
+    <list default="true" id="d35ecb45-0c8c-46ce-a6c6-98c19e25fd61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../FlaskNew/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskNew/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskNew/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskNew/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskNew/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskNew/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskNew/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskNew/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskNew/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskNew/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskNew/templates/seo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskNew/templates/seo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Project/.idea/Flask.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Project/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Shool/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Shool/.idea/Flask.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Shool/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Shool/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Shool/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask_Shool/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03 dec 2025 w3shools.py" beforeDir="false" afterPath="$PROJECT_DIR$/03 dec 2025 w3shools.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AndrijLet"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AndrijLet/HomWork.git",
+    "accountId": "062a0c59-86f7-4491-b452-233ba0aac5d3"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Python Object-Oriented Programming/20 decem 2025 schools.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -47,7 +80,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+        <option value="bundled-python-sdk-07523f343e4f-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28539.27" />
       </set>
     </attachedChunks>
   </component>
