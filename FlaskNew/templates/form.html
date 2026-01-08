@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма зворотнього зв'язку</title>
+</head>
+<body>
+    <h1>Зворотній зв'язок</h1>
+    <form method="POST">
+        <label>Ім'я:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Вік:</label><br>
+        <input type="number" name="age"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>
+            <input type ="checkbox" name="subscribe" value="yes">
+            Підписатися на новини
+        </label>><br><br>
+
+        <label>Тема:</label><br>
+        <select name="topic">
+            <option value="seo">SEO</option>
+            <option value="design">Дизайн</option>
+            <option value="marketing">Маркетинг</option>
+        </select><br><br>
+
+        <label>Повідомлення:</label><br>
+        <textarea name="message" rows="5" cols="50"></textarea><br><br>
+
+        <button type="submit">Надіслати</button>
+
+    </form>
+
+    {% if submitted %}
+        <h2>Отримані дані:</h2>
+        <ul>
+
+            <li>Ім'я: {{ data.name }}</li>
+            <li>Вік: {{ data.age }}</li>
+            <li>Email: {{ data.email }}</li>
+            <li>Підписка: {{ data.subscribe }}</li>
+            <li>Тема: {{ data.topic }}</li>
+            <li>Повідомлення: {{ data.message }}</li>
+        </ul>
+    {% endif %}
+
+
+</body>
+</html>
