@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>API Тест</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        button { margin: 5px; padding: 8px 16px; }
+        pre { background: #f4f4f4; padding: 10px; border: 1px solid #ccc; }
+        .nav { margin-bottom: 20px; }
+        .nav a { margin-right: 10px; text-decoration: none; color: #007BFF; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="{{ url_for('index') }}">Головна</a>
+        <a href="{{ url_for('about') }}">Про компанію</a>
+        <a href="{{ url_for('seo') }}">SEO</a>
+        <a href="{{ url_for('form') }}">Форма</a>
+        <a href="{{ url_for('api_test') }}">API‑тест</a>
+    </div>
+
+    <h1>Тестування API</h1>
+
+    <button onclick="getItems()">GET /items</button>
+    <button onclick="postItem()">POST /items</button>
+    <button onclick="putItem()">PUT /items/1</button>
+    <button onclick="patchItem()">PATCH /items/2</button>
+    <button onclick="deleteItem()">DELETE /items/3</button>
+
+    <h2>Результат:</h2>
+    <pre id="output">Натисни кнопку для запиту...</pre>
+
+    <script>
+        function showResult(data) {
+            document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+        }
+
+        function getItems() {
+            fetch('/items')
+                .then(res => res.json())
+                .then(data => showResult(data));
+        }
+
+        function postItem() {
+            fetch('/items', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name: 'Новий елемент'})
+            })
+            .then(res => res.json())
+            .then(data => showResult(data));
+        }
+
+        function putItem() {
+            fetch('/items/1', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name: 'Оновлений елемент'})
+            })
+            .then(res => res.json())
+            .then(data => showResult(data));
+        }
+
+        function patchItem() {
+            fetch('/items/2', {
+                method: 'PATCH',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({name: 'Часткове оновлення'})
+            })
+            .then(res => res.json())
+            .then(data => showResult(data));
+        }
+
+        function deleteItem() {
+            fetch('/items/3', { method: 'DELETE' })
+                .then(res => res.json())
+                .then(data => showResult(data));
+        }
+    </script>
+</body>
+</html>

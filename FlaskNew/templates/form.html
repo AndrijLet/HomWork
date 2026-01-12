@@ -2,42 +2,48 @@
 <html>
 <head>
     <title>Форма зворотнього зв'язку</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 400px; }
+        label { font-weight: bold; }
+        input, select, textarea { width: 100%; margin-bottom: 10px; }
+        button { padding: 8px 16px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
 </head>
 <body>
     <h1>Зворотній зв'язок</h1>
     <form method="POST">
-        <label>Ім'я:</label><br>
-        <input type="text" name="name"><br><br>
+        <label>Ім'я:</label>
+        <input type="text" name="name">
 
-        <label>Вік:</label><br>
-        <input type="number" name="age"><br><br>
+        <label>Вік:</label>
+        <input type="number" name="age">
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <label>Email:</label>
+        <input type="email" name="email">
 
         <label>
-            <input type ="checkbox" name="subscribe" value="yes">
+            <input type="checkbox" name="subscribe" value="yes">
             Підписатися на новини
-        </label>><br><br>
+        </label><br><br>
 
-        <label>Тема:</label><br>
+        <label>Тема:</label>
         <select name="topic">
             <option value="seo">SEO</option>
             <option value="design">Дизайн</option>
             <option value="marketing">Маркетинг</option>
-        </select><br><br>
+        </select>
 
-        <label>Повідомлення:</label><br>
-        <textarea name="message" rows="5" cols="50"></textarea><br><br>
+        <label>Повідомлення:</label>
+        <textarea name="message" rows="5" cols="50"></textarea>
 
         <button type="submit">Надіслати</button>
-
     </form>
 
     {% if submitted %}
-        <h2>Отримані дані:</h2>
+        <h2>Дякуємо! Дані отримано:</h2>
         <ul>
-
             <li>Ім'я: {{ data.name }}</li>
             <li>Вік: {{ data.age }}</li>
             <li>Email: {{ data.email }}</li>
@@ -47,6 +53,6 @@
         </ul>
     {% endif %}
 
-
+    <p><a href="{{ url_for('index') }}">⬅ Повернутися на головну</a></p>
 </body>
 </html>

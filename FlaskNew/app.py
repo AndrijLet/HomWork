@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -13,6 +13,12 @@ def about():
 @app.route("/seo")
 def seo():
     return render_template("seo.html")
+
+
+@app.route("/api-test")
+def api_test():
+    return render_template("api_test.html")
+
 
 '''додаю новий маршрут'''
 
@@ -35,6 +41,9 @@ def form():
 
         })
     return render_template("form.html", submitted=False) #
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
