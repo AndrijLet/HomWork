@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Список лістингів{% endblock %}
+
+{% block content %}
+<h2>Список лістингів</h2>
+<a href="{{ url_for('add_listing_route') }}" class="btn">Додати новий</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Назва</th>
+            <th>Опис</th>
+            <th>Ціна</th>
+            <th>Дії</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for listing in listings %}
+        <tr>
+            <td>{{ listing.id }}</td>
+            <td>{{ listing.title }}</td>
+            <td>{{ listing.description }}</td>
+            <td>{{ listing.price }} грн</td>
+            <td>
+                <a href="{{ url_for('edit_listing_route', listing_id=listing.id) }}">Редагувати</a>
+                <form action="{{ url_for('delete_listing_route', listing_id=listing.id) }}" method="post" style="display:inline;">
+                    <button type="submit">Видалити</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

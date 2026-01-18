@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Додати лістинг{% endblock %}
+
+{% block content %}
+<h2>Додати новий лістинг</h2>
+<form method="post">
+    <label for="title">Назва:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Опис:</label>
+    <textarea id="description" name="description"></textarea>
+
+    <label for="price">Ціна:</label>
+    <input type="number" step="0.01" id="price" name="price" required>
+
+    <button type="submit">Додати</button>
+</form>
+{% endblock %}

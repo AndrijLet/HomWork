@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Редагувати лістинг{% endblock %}
+{% block content %}
+<h1>✏️ Редагувати лістинг</h1>
+
+<form method="POST" class="feedback-form">
+    <label for="title">Назва:</label>
+    <input type="text" id="title" name="title" value="{{ listing.title }}" required>
+
+    <label for="description">Опис:</label>
+    <textarea id="description" name="description" rows="4">{{ listing.description }}</textarea>
+
+    <label for="price">Ціна:</label>
+    <input type="number" id="price" name="price" step="0.01" value="{{ listing.price }}">
+
+    <button type="submit">Зберегти зміни</button>
+</form>
+
+<p><a href="{{ url_for('listings') }}">⬅ Назад до списку</a></p>
+{% endblock %}

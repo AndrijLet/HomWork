@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Додати лістинг{% endblock %}
+{% block content %}
+<h1>➕ Додати новий лістинг</h1>
+
+<form method="POST" class="feedback-form">
+    <label for="title">Назва:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Опис:</label>
+    <textarea id="description" name="description" rows="4"></textarea>
+
+    <label for="price">Ціна:</label>
+    <input type="number" id="price" name="price" step="0.01">
+
+    <button type="submit">Додати</button>
+</form>
+
+<p><a href="{{ url_for('listings') }}">⬅ Назад до списку</a></p>
+{% endblock %}

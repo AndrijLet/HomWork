@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Адмін-панель магазину{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header class="welcome">
+        <h1>Адмін-панель магазину</h1>
+        <p class="intro">Керуйте лістингами легко та швидко</p>
+    </header>
+
+    <nav>
+        <a href="{{ url_for('index') }}" class="nav-btn">🏠 Головна</a>
+        <a href="{{ url_for('add_listing_route') }}" class="nav-btn">➕ Додати лістинг</a>
+    </nav>
+
+    <div class="content">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class="flashes">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="footer-links">
+        <h3>Магазин весільних товарів</h3>
+        <ul>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Допомога</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

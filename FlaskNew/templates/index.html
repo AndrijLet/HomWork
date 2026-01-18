@@ -3,16 +3,15 @@
 {% block content %}
 <div class="welcome">
     <h1>Ласкаво просимо на SEO‑сайт!</h1>
-    <p class="intro">Тут ви знайдете інформацію про основи SEO.</p>
+    <p class="intro">Тут ви знайдете інформацію про SEO, наші послуги та приклади роботи.</p>
 </div>
 <div class="footer-links">
     <h3>Перегляньте сторінки:</h3>
     <ul>
-        <li><a href="{{ url_for('index') }}">Головна сторінка</a></li>
         <li><a href="{{ url_for('about') }}">Про компанію</a></li>
         <li><a href="{{ url_for('seo') }}">SEO</a></li>
         <li><a href="{{ url_for('form') }}">Заповнити форму</a></li>
+        <li><a href="{{ url_for('listings') }}">Переглянути Listings</a></li>
     </ul>
 </div>
-
 {% endblock %}
