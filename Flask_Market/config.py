@@ -9,3 +9,5 @@ class Config:
         'user': 'root',
         'password': 'usbw'
     }
+
+# підключення до MySQL

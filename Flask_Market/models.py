@@ -43,7 +43,7 @@ def execute_query(query, args=(), commit=False, one=False):
         connection.close()
 
 
-# функції
+# функції   враховано захист "%s"
 # READ — отримати всі лістинги
 def get_all_listings():
     return execute_query("SELECT * FROM listing_csv2")

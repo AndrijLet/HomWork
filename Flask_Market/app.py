@@ -44,7 +44,6 @@ def add_listing_route():
         flash("Лістинг додано успішно!")
         # Переадресація на головну сторінку
         return redirect(url_for("index"))
-    # Якщо GET-запит — просто показуємо форму
     return render_template("add_listing.html")
 
 # РЕДАГУВАННЯ ЛІСТИНГУ
