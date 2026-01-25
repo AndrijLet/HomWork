@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
+from api import api
 
 # Імпортуємо функції для роботи з базою даних
 from models import (
@@ -9,12 +10,13 @@ from models import (
     delete_listing      # видалити лістинг
 )
 
-# Створюємо Flask
+#  Flask
 app = Flask(__name__)
 
 # Підключаємо конфігурацію (SECRET_KEY, налаштування БД)
 app.config.from_object('config.Config')
 
+app.register_blueprint(api)
 
 # ГОЛОВНА
 @app.route("/")
@@ -86,3 +88,6 @@ def delete_listing_route(listing_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+"""meg keys для GET POST ТАКОЖ МОЖНА ВИКОРИСТАТИ"""
