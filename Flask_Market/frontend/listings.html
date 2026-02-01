@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Каталог весільних товарів{% endblock %}
+
+{% block content %}
+<h2>Весільні лістинги</h2>
+<a href="{{ url_for('add_listing_route') }}" class="btn">➕ Додати новий товар</a>
+
+<table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Назва</th>
+            <th>Опис</th>
+            <th>Кількість</th>
+            <th>Ціна за одиницю</th>
+            <th>Дії</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for listing in listings %}
+        <tr>
+            <td>{{ listing.id }}</td>
+            <td>{{ listing.title }}</td>
+            <td>{{ listing.description }}</td>
+            <td>{{ listing.quantity }}</td>
+            <td>{{ listing.price }} USD</td>
+            <td>
+                <a href="{{ url_for('edit_listing_route', listing_id=listing.id) }}">✏️ Редагувати</a>
+                <form action="{{ url_for('delete_listing_route', listing_id=listing.id) }}" method="post" style="display:inline;">
+                    <button type="submit">🗑️ Видалити</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
