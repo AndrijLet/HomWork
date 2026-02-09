@@ -62,3 +62,5 @@ def api_delete_listing(listing_id):
     delete_listing(listing_id)
     return jsonify({"message": "Listing deleted"})
 
+
+

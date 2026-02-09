@@ -18,6 +18,11 @@ app.config.from_object('config.Config')
 
 app.register_blueprint(api)
 
+# ФРОНТЕНД
+@app.route("/frontend")
+def frontend_page():
+    return render_template("index.html")
+
 # ГОЛОВНА
 @app.route("/")
 def index():
